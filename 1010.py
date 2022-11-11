@@ -1,0 +1,11 @@
+#1010
+codigo, quant, valor = input().split()
+codigo2, quant2, valor2 = input().split()
+codigo = int(codigo)
+codigo2 = int(codigo2)
+quant = int(quant)
+quant2 = int(quant2)
+valor = float(valor)
+valor2 = float(valor2)
+total = (valor * quant) + (valor2 * quant2)
+print(f"VALOR A PAGAR: R$ {total:.2f}")
