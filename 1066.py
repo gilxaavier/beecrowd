@@ -1,19 +1,27 @@
+par = 0
+impar = 0
 positivo = 0
 negativo = 0
-par = 0 
-impar = 0
-for i in range(5):
-    num = float(input(""))
-    if num > 0:
-        positivo +=1
-    elif num < 0:
-        negativo +=1
-    elif num % 2 ==0:
-        par +=1
-    elif num % 2 == 1:
-        impar +=1
+numeros = []
 
-print(par, "valor(es) par(es)") 
-print(impar, "valor(es) impar(es)")
-print(positivo, "valor(es) positivo(s)")
-print(negativo, "valor(es) negativo(s)")
+for i in range(5):
+    num = int(input())
+    numeros.append(num)
+print(numeros)
+
+for i in numeros:
+    if i % 2 == 0 :
+        par += 1
+        
+    if i % 2 == 1:
+        impar += 1
+        
+    if i >  0:
+        positivo += 1
+    if i <0:
+        negativo+=1
+
+print(f"{par} valor(es) par(es)")
+print(f"{impar} valor(es) impar(es)")
+print(f"{positivo} valor(es) positivo(s)")
+print(f"{negativo} valor(es) negativo(s)")
